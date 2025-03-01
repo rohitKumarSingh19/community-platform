@@ -1,0 +1,137 @@
+/* Global Styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+    
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    /* Navbar Styling */
+    .navbar {
+    background-color: #007bff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    }
+    
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    }
+    
+    .nav-links li {
+    display: inline;
+    }
+    
+    .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+    text-decoration: underline;
+    }
+    
+    /* Forms */
+    .form-container {
+    background: white;
+    padding: 30px;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    }
+    
+    .btn {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    }
+    
+    .btn:hover {
+    background: #0056b3;
+    }
+    
+    /* Dashboard & Posts */
+    .dashboard {
+    padding: 20px;
+    margin-top: 80px;
+    }
+    
+    .post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    }
+    
+    .post:hover {
+    transform: scale(1.02);
+    }
+    
+    .post h3 {
+    color: #007bff;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    .navbar {
+    flex-direction: column;
+    padding: 10px;
+    }
+    .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    }
+    .form-container {
+    width: 90%;
+    }
+    }
