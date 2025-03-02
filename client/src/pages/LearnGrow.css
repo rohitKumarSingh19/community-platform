@@ -1,0 +1,66 @@
+.learn-grow-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .discussion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .discussion-form input,
+  .discussion-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .discussion-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  
+  .discussion-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .discussions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .discussion-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .discussion-card h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  .discussion-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

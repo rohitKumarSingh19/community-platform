@@ -30,6 +30,7 @@ import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
 import ShareIdeas from './pages/ShareIdeas';
 import CollaboratePage from './pages/CollaboratePage';
+import LearnGrowPage from './pages/LearnGrowPage';
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/share-ideas" element={<ShareIdeas />} />
         <Route path="/collaborate" element={<CollaboratePage />} />
+        <Route path="/learn-grow" element={<LearnGrowPage/>}/>
         <Route path="/dashboard" element={
           <ProtectedRoute>
             <Dashboard />
