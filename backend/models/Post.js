@@ -13,4 +13,4 @@ const PostSchema=new mongoose.Schema({
     comments:[{body:String,date:Date}]
 },{timestamps:true});
 const Post= mongoose.model('Post',PostSchema);
-export default Post
+export default Post;

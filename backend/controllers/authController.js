@@ -14,6 +14,14 @@ export const loginUser = async (req, res) => {
   if (!user || !(await bcrypt.compare(password, user.password))) {
     return res.status(401).json({ message: 'Invalid Credentials' });
   }
+  //verify password
+  const isMatch=await bcrypt.compare(password,user.password);
+  if(!isMatch){
+    return res.status(401).json({message:'Invalid credentials'});
+  }
+  //Generate Token
+  // const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
+  // res.json({ token, user });
   const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1d' });
-  res.json({ token, user });
+  res.json({ token, user: { id: user._id, name: user.name, email: user.email } });
 };
