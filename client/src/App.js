@@ -28,6 +28,9 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
+import ShareIdeas from './pages/ShareIdeas';
+import CollaboratePage from './pages/CollaboratePage';
+
 
 const App = () => {
   return (
@@ -37,6 +40,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/share-ideas" element={<ShareIdeas />} />
+        <Route path="/collaborate" element={<CollaboratePage />} />
         <Route path="/dashboard" element={
           <ProtectedRoute>
             <Dashboard />

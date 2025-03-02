@@ -1,0 +1,74 @@
+/* Collaborate Section Styles */
+.collaborate-container {
+    max-width: 1200px;
+    margin: 85px auto 20px;
+    /* padding: 20px; */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .create-project, .project-list {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .create-project h2, .project-list h2 {
+    color: #007bff;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .project-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-list ul li {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .project-list ul li h3 {
+    color: #007bff;
+  }
+  
+  .project-list button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .project-list button:hover {
+    background-color: #218838;
+  }
+  

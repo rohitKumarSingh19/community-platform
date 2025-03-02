@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <header className="hero">
-        <h1>Welcome to the Community Collaboration Platform</h1>
+        <h1 className="collaboration-head">Welcome to the Community Collaboration Platform</h1>
         <p>Join us to share ideas, collaborate, and grow together!</p>
         <a href="/register" className="btn-primary">
           Get Started
