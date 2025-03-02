@@ -19,7 +19,7 @@ const ShareIdeas = () => {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/posts/create', { title, content }, {
+      await axios.post('https://community-platform-q1t2.onrender.com/api/posts/create', { title, content }, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

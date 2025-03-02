@@ -7,7 +7,7 @@ const LearnGrowPage = () => {
   const [content, setContent] = useState('');
   // Fetch all discussions when the page loads
   useEffect(() => {
-    axios.get('http://localhost:5000/api/discussions')
+    axios.get('https://community-platform-q1t2.onrender.com/api/discussions')
       .then(res => setDiscussions(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -15,7 +15,7 @@ const LearnGrowPage = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/discussions/create', { title, content }, {
+      await axios.post('https://community-platform-q1t2.onrender.com/api/discussions/create', { title, content }, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("Discussion posted successfully!");
