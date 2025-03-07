@@ -1,4 +1,4 @@
-Client : https://community-platform-client.onrender.com/
+Client : https://community-platform-client.onrender.com
 Backend : https://community-platform-q1t2.onrender.com/
 
 ![image](https://github.com/user-attachments/assets/84f9cdb0-c2e4-45fd-ac2b-7e803d36dcde)
