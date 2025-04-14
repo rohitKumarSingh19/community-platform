@@ -49,7 +49,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://community-platform-q1t2.onrender.com/api/auth/register', { name, email, password });
+      await axios.post('https://community-platform-2.onrender.com/api/auth/register', { name, email, password });
       navigate('/login');
     } catch (error) {
       console.error(error);
