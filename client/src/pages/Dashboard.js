@@ -15,7 +15,7 @@ const Dashboard = () => {
     }
 
     axios
-      .get("https://community-platform-2.onrender.com/api/posts", {
+      .get("http://localhost:5000/api/posts", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {

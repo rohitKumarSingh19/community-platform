@@ -12,9 +12,8 @@ const app = express();
 
 // ✅ CORS config to allow your Netlify frontend
 app.use(cors({
-  origin: 'https://shiny-chebakia-65d5fd.netlify.app', // your Netlify frontend domain
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // only if you’re using cookies/sessions
+  origin: ['http://localhost:3000', 'https://shiny-chebakia-65d5fd.netlify.app'],
+  credentials: true,
 }));
 
 app.use(express.json());

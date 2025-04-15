@@ -10,7 +10,7 @@ const CreateProject = () => {
     const token = localStorage.getItem('token');  // Retrieve token from localStorage
 
     try {
-      await axios.post('https://community-platform-2.onrender.com/api/projects/create', {
+      await axios.post('http://localhost:5000/api/projects/create', {
         title,
         description,
       }, {
