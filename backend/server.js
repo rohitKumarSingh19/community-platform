@@ -11,8 +11,16 @@ import discussionRoutes from './routes/discussionRoutes.js';
 const app = express();
 
 // ✅ CORS config to allow your Netlify frontend
+// app.use(cors({
+//   origin: ['http://localhost:3000', 'https://shiny-chebakia-65d5fd.netlify.app'],
+//   credentials: true,
+// }));
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://shiny-chebakia-65d5fd.netlify.app'],
+  origin: [
+    'http://localhost:3000',
+    'https://shiny-chebakia-65d5fd.netlify.app',
+    'https://delightful-sprite-875ac8.netlify.app' // 👈 add this
+  ],
   credentials: true,
 }));
 
