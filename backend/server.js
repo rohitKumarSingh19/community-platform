@@ -21,7 +21,6 @@ app.use(cors({
     'https://shiny-chebakia-65d5fd.netlify.app',
     'https://delightful-sprite-875ac8.netlify.app' // 👈 add this
   ],
-  credentials: true,
 }));
 
 app.use(express.json());
