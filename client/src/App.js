@@ -31,7 +31,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import ShareIdeas from './pages/ShareIdeas';
 import CollaboratePage from './pages/CollaboratePage';
 import LearnGrowPage from './pages/LearnGrowPage';
-
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -50,6 +50,7 @@ const App = () => {
           </ProtectedRoute>
         } />
       </Routes>
+      <Footer/>
     </div>
   );
 };

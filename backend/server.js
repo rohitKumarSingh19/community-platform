@@ -10,17 +10,13 @@ import discussionRoutes from './routes/discussionRoutes.js';
 
 const app = express();
 
-// ✅ CORS config to allow your Netlify frontend
-// app.use(cors({
-//   origin: ['http://localhost:3000', 'https://shiny-chebakia-65d5fd.netlify.app'],
-//   credentials: true,
-// }));
+// ✅ Fallback to 5000 if PORT not set
+const PORT = process.env.PORT || 5000;
+
+// ✅ Only allow localhost frontend during development
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'https://shiny-chebakia-65d5fd.netlify.app',
-    'https://delightful-sprite-875ac8.netlify.app' // 👈 add this
-  ],
+  origin: 'http://localhost:3000',
+  credentials: true
 }));
 
 app.use(express.json());
@@ -34,6 +30,6 @@ app.use('/api/discussions', discussionRoutes);
 // Connect DB and start server
 connectDB();
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`✅ Server running on port ${PORT}`);
 });

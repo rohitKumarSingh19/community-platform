@@ -30,9 +30,9 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      {/* <footer className="footer">
         <p>&copy; 2025 Community Collaboration Platform. All Rights Reserved.</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };

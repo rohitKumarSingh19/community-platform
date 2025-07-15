@@ -9,7 +9,7 @@ const CollaboratePage = () => {
 
   useEffect(() => {
     // Fetching the list of projects from the backend API
-    axios.get('https://community-platform-4.onrender.com/api/projects')
+    axios.get('http://localhost:5000/api/projects')
       .then(response => setProjects(response.data))
       .catch(error => console.error('Error fetching projects:', error));
   }, []);

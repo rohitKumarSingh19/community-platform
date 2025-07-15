@@ -17,8 +17,8 @@ const Register = () => {
     setLoading(true);
 
     try {
-      await axios.post('https://community-platform-4.onrender.com/api/auth/register', {
-        username, email, password
+      await axios.post('http://localhost:5000/api/auth/register', {
+        name:username, email, password
       });
       navigate('/login');
     } catch (err) {
@@ -71,5 +71,4 @@ const Register = () => {
     </div>
   );
 };
-
 export default Register;
