@@ -39,6 +39,7 @@ const Register = () => {
               type="text"
               placeholder="Username"
               value={username}
+              autoComplete='new-name'
               onChange={(e) => setUsername(e.target.value)}
               required
             />
@@ -56,6 +57,7 @@ const Register = () => {
             <input
               type="password"
               placeholder="Password"
+              autoComplete='new-password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

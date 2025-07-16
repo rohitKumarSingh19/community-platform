@@ -8,7 +8,9 @@ const ProjectSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+  createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  members:[{type:mongoose.Schema.Types.ObjectId,ref:'User'}]
 }, { timestamps: true });
 const Project = mongoose.model('Project', ProjectSchema);
+
 export default Project;

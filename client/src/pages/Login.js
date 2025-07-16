@@ -13,10 +13,10 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post('http://localhost:5000/api/auth/login', { email, password });
-      console.log("Login Response:", res.data); // ✅ Debugging
+      //console.log("Login Response:", res.data); // ✅ Debugging
       if (res.data.token) {
         localStorage.setItem('token', res.data.token); // ✅ Store token
-        console.log("Token Stored:", localStorage.getItem('token')); // ✅ Debugging
+        //console.log("Token Stored:", localStorage.getItem('token')); // ✅ Debugging
         navigate('/dashboard'); // ✅ Navigate after login
       } else {
         alert('Invalid credentials');
@@ -33,10 +33,10 @@ const Login = () => {
         <h2>Login</h2>
         <form onSubmit={handleSubmit} className="login-form">
           <div className="input-group">
-            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input type="email" autoComplete='new-email' placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </div>
           <div className="input-group">
-            <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+            <input type="password" placeholder="Password" autoComplete='new-password' value={password} onChange={(e) => setPassword(e.target.value)} required />
           </div>
           <button type="submit" className="btn">Login</button>
         </form>
