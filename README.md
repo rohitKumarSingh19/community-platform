@@ -146,3 +146,69 @@ Start the frontend server (React).
 Visit http://localhost:3000 to interact with the platform.
 This setup should give you a full-fledged collaboration platform where users can register, login, post ideas, collaborate on projects, and discuss skills for learning and growing.
 
+File Structure:
+
+community-platform/
+│
+├── 📁 backend/
+│   ├── 📁 config/
+│   │   └── db.js
+│   ├── 📁 controllers/
+│   │   ├── authController.js
+│   │   ├── discussionController.js
+│   │   ├── postController.js
+│   │   └── projectController.js
+│   ├── 📁 middleware/
+│   │   └── authMiddleware.js
+│   ├── 📁 models/
+│   │   ├── Discussion.js
+│   │   ├── Posts.js
+│   │   ├── Project.js
+│   │   └── User.js
+│   ├── 📁 routes/
+│   │   ├── authRoutes.js
+│   │   ├── postRoutes.js
+│   │   └── projectRoutes.js
+│   ├── 📁 utils/
+│   │   └── tokenHandler.js
+│   ├── .env
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
+│
+├── 📁 client/
+│   ├── 📁 src/
+│   │   ├── 📁 assets/
+│   │   ├── 📁 components/
+│   │   │   ├── AuthForm.js
+│   │   │   ├── CreateProject.js
+│   │   │   ├── DiscussionCard.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Navbar.css
+│   │   │   ├── Navbar.js
+│   │   │   ├── PostCard.js
+│   │   │   ├── ProjectList.js
+│   │   │   └── ProtectedRoute.js
+│   │   ├── 📁 context/
+│   │   │   └── AuthContext.js
+│   │   ├── 📁 pages/
+│   │   │   ├── Collaborate.css
+│   │   │   ├── CollaboratePage.js
+│   │   │   ├── Dashboard.js
+│   │   │   ├── Home.css
+│   │   │   ├── Home.js
+│   │   │   ├── LearnGrow.css
+│   │   │   ├── LearnGrow.js
+│   │   │   ├── Login.css
+│   │   │   ├── Login.js
+│   │   │   ├── Register.css
+│   │   │   ├── Register.js
+│   │   │   ├── SharedIdeas.css
+│   │   │   └── SharedIdeas.js
+│   │   └── 📁 services/
+│   │       └── api.js
+│   ├── package.json
+│   └── package-lock.json
+│
+└── README.md (if exists)
+
