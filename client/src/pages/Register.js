@@ -17,7 +17,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:5000/api/auth/register', {
+      await axios.post('https://community-platform-backend-ibib.onrender.com/api/auth/register', {
         name:username, email, password
       });
       navigate('/login');

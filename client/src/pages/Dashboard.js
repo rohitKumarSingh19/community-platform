@@ -15,7 +15,7 @@ const Dashboard = () => {
     }
 
     axios
-      .get("http://localhost:5000/api/posts", {
+      .get("https://community-platform-backend-ibib.onrender.com/api/posts", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {
